@@ -1,0 +1,41 @@
+body {
+    background-color: #f3f3f3;
+    padding: 20px;
+}
+
+.cover {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.cover-image {
+    width: 20rem;
+    height: 12rem;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 3px 10px 1px rgb(143, 143, 143);
+}
+
+.cover-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cart {
+    transition: all 250ms;
+}
+
+.cart:hover {
+    transform: scale(1.08);
+}
+
+.cart h1 {
+    font-size: medium;
+}
