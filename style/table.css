@@ -1,0 +1,39 @@
+body {
+    background-color: #f3f3f3;
+    padding: 3rem;
+}
+
+table {
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 3px 4px 10px 1px rgb(143, 143, 143);
+    border-radius: 20px;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: gray;
+}
+
+tr:hover {
+    background-color: rgb(88, 88, 88);
+}
+
+table img {
+    width: 5rem;
+}
+
+.a {
+    background-color: red;
+}
