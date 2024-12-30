@@ -1,0 +1,27 @@
+body{
+    background-color:#f3f3f3;
+    padding:3rem;
+}
+table{
+    
+    width:50%;
+    margin: auto;
+    padding:20px;
+    box-shadow:3px 3px 10px 1px rgb(170, 167, 167);
+    border-radius:20px;
+}
+table thead tr th, tr td{
+    border:solid black;
+    padding:5px;
+}
+th{
+    background-color: black;
+    color:white;
+}
+tr:nth-child(even){
+background-color:rgb(165, 163, 163);
+}
+tr:hover{
+background-color:rgb(58, 57, 57);
+
+}
