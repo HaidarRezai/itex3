@@ -1,0 +1,54 @@
+body{
+    background-color: #f3f3f3;
+    display: grid;
+    grid-template-columns: 20% auto 25%;
+    gap: 8px;
+}
+h1, h2, h3{
+    font-family: arial;
+    color: blue;
+}
+
+header,
+footer,
+main,
+aside{
+    background-color: #ffffff;
+    padding: 2rem;
+    box-shadow: 2px 3px 10px 1px #3a84f4;
+}
+
+header,
+footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+header h1, h3{
+    text-align: center;
+    color: blue;
+}
+
+.photo img{
+    width: 40%;
+}
+
+.photo h1{
+    font-family: arial;
+    font-size: smaller;
+}
+
+.hometown{
+    padding: 15px 30px;
+    background-color: #ffffff;
+    box-shadow: 2px 3px 10px 1px #3a84f4;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+footer h1, p{
+    text-align: center;
+}
