@@ -1,0 +1,110 @@
+body{
+    background-color: #f3f3f3;
+    padding: 10px;
+    margin: 0px;;
+    display: grid;
+    grid-template-columns: 25% 75% ;
+}
+header,main,footer,aside{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    
+}
+header{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+}
+
+
+nav ul{
+    background-color: rgb(8, 9, 9);
+    color: rgb(240, 240, 240);
+    padding:20px 20px;
+    display: flex; 
+    gap: 30px;
+     
+}
+nav ul li{
+    list-style-type: none;
+    color: white;
+
+}
+nav ul li a:{
+    color: white;
+}
+nav ul li:hover{
+    text-decoration: none;
+
+}
+
+a{
+    color: white;
+}
+
+header,footer,nav{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-radius: 20px;
+
+
+}
+h1{
+    font-size: 50px;
+    color: rgb(58, 22, 219);
+    
+    
+    margin: 0px;
+
+}
+
+
+.dash{
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(177, 230, 173);
+}
+.dash h1{
+font-size: 30px;}
+.center{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid black ;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px 1px black;
+}
+.center img{
+    width: 60%;
+    overflow: hidden;
+}
+.center h3{
+    color: red;
+}
+table{
+    width: 100%;
+    margin: auto;
+    border: 1px solid black;
+    padding: 10px;
+}
+table th{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+table tr td{
+    border: 1px solid black;
+    padding: 10px
+}
+tr:nth-child(even){
+    background-color: rgb(154, 238, 212);
+    padding: 10px;
+}
+tr:hover{
+    box-shadow: 3px 3px 4px 1px rgb(103, 103, 250);
+
+}
