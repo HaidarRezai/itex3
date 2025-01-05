@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Khuda Dad Shafaee">
+    <meta name="description" content="Working with form and making a login form">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In Fomr</title>
+    <link rel="stylesheet" href="./styles/form.css">
+</head>
+<body>
+    <div>
+        <h1>Welcome to my website!</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus possimus nobis illo, delectus quam veritatis natus similique reiciendis aperiam sit facere quibusdam libero recusandae itaque, perspiciatis consequatur provident dicta praesentium eveniet, alias sequi nisi corporis cumque? Doloremque cum eaque odit veniam officiis ut obcaecati maiores fuga non architecto! Perspiciatis ducimus corrupti pariatur reprehenderit praesentium, incidunt illum consectetur accusantium consequuntur maxime provident. Mollitia culpa molestias laudantium facere, odit modi ducimus nostrum. Possimus sequi ea error. Corrupti aliquid ex alias qui provident sapiente sequi, minima iure aut repudiandae molestias aperiam sint error harum delectus, quas tempore earum autem. Repudiandae reiciendis nisi saepe.
+        </p>
+    </div>
+    <form>
+        <div>
+            <label for="photo">
+                <img src="./images/profile.webp" alt="profile image" width="150px">
+            </label>
+            <input type="file"id="photo" hidden required accept=".jpg, .png">
+        </div>
+        <div>
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" required placeholder="Full Name" maxlength="30">
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" id="age" required placeholder="Age" min="18" max="65">
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" required placeholder="00937*******" pattern="[0]{2}[9]{1}[3]{1}[7]{1}[0-9]{7}">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" required placeholder="text@gmail.com" pattern="[a-x0-9]{10-20}[@]{1}[.]{1}[c]{1}[o]{1}[m]{1}">
+        </div>
+        <div>
+            <input type="submit" value="Log In">
+        </div>
+    </form>
+</body>
+</html>
