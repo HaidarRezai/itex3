@@ -1,0 +1,36 @@
+body{
+    background-color: #f3f3f3;
+    padding: 0;
+    margin: 300px;
+}
+form{
+    width: 30%;
+    padding: 20%;
+    box-shadow: 3px 4px 10px 1px gray;
+    border-radius: 20px 100px 100px 20px;
+     margin: auto;
+     background-color:rgb(rgb(236, 124, 124), rgb(105, 228, 105), rgb(119, 119, 231));
+}
+form div{
+    display: grid;
+    grid-template-columns:  auto;
+    margin-top: 10px;
+
+}
+form div input{
+    background-color: white;
+    border: none;
+    border-radius:10px;
+    box-shadow: 1px 1px 8px 1px;
+    outline:none; 
+    padding: 4px;
+}
+form div:last-child input{
+    background-color:yellow;
+    color:white
+    
+}
+form div:first-child label{
+    display: flex;
+    justify-content: center;
+}
