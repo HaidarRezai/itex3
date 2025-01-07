@@ -1,0 +1,62 @@
+body{
+    background-color: rgb(240, 240, 240);
+    padding: 2rem;
+    margin: 0;
+}
+
+form{
+    background-color: rgb(210, 210, 210);
+    box-shadow: 3px 4px 12px 1px rgb(180, 180, 180);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 20px;
+    width: 40%;
+    margin: auto;
+    margin-top: 4rem;
+}
+
+form div{
+    display: grid;
+    grid-template-columns: 5rem auto;
+    margin-top: 10px;
+}
+
+form div input{
+    background-color: rgb(240, 240, 240);
+    border: none;
+    outline: none;
+    padding: 4px;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+    box-shadow: 2px 3px 10px 1px rgb(180, 180, 180);
+}
+form div:last-child input{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgb(60, 60, 60);
+    color: #ffffff;
+}
+
+form div:first-child label{
+    display: flex;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+form div:first-child label{
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    object-fit: contain;
+    overflow: hidden;
+    margin: auto;
+    margin-top: -80px;
+    box-shadow: 2px 3px 10px 2px rgb(180, 180, 180);
+}

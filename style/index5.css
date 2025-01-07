@@ -33,13 +33,9 @@ section {
     padding: 20px;
 }
 
-
-
-
-
-
-
-
+pre {
+    background-color: gray;
+}
 
 @media screen and (max-width:800px) {
     body {
