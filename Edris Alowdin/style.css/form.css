@@ -1,15 +1,15 @@
 body{
-    background-color: #f3f3f3;
+    background-image: url(./../image/bg.jpg);
     padding: 0;
     margin: 300px;
-}
+    }
 form{
     width: 30%;
     padding: 20%;
     box-shadow: 3px 4px 10px 1px gray;
     border-radius: 20px 100px 100px 20px;
      margin: auto;
-     background-color:rgb(rgb(236, 124, 124), rgb(105, 228, 105), rgb(119, 119, 231));
+    background-color:rgba(225, 225, 225, 0.50);
 }
 form div{
     display: grid;
