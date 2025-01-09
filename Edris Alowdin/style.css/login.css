@@ -83,6 +83,7 @@ body{
         font-size: 14.5px;
         text-align: center;
      margin: 20px 0 15px;
+     justify-content: space-between;
         
     }
     .register-link p a{
@@ -92,5 +93,6 @@ body{
     }
     .register-link p a:hover{
         text-decoration: underline;
+        
     }
     
