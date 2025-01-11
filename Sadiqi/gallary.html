@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallary.css">
+    <title>FC Barcelona</title>
+</head>
+<body>
+    <section>
+        <ul>
+        <li class="List active" data-filter="All">All</li>
+        <li class="List" data-filter="mobile">Messi</li>
+        <li class="List" data-filter="camera">FCB</li>
+        <li class="List" data-filter="watch">MSN</li>
+        <li class="List" data-filter="shoe">CUP</li>
+
+        </ul>
+        <div class="product">
+            <div class="itembox mobile"> <img src="./image/barcelona/b5.jpg"></div>
+            <div class="itembox camera"> <img src="./image/barcelona/b1.jpg"></div>
+            <div class="itembox watch"> <img src="./image/barcelona/b7.jpg"></div>
+            <div class="itembox shoe"> <img src="./image/barcelona/b3.jpg"></div>
+            <div class="itembox headphone"> <img src="./image/barcelona/b5.jpg"></div>
+            <div class="itembox mobile"> <img src="./image/barcelona/b2.jpg"></div>
+            <div class="itembox camera"> <img src="./image/barcelona/b6.jpg"></div>
+            <div class="itembox watch"> <img src="./image/barcelona/b16.jpg"></div>
+            <div class="itembox shoe"> <img src="./image/barcelona/b11.jpg"></div>
+            <div class="itembox headphone"> <img src="./image/barcelona/b10.jpg"></div>
+            <div class="itembox mobile"> <img src="./image/barcelona/b9.jpg"></div>
+            <div class="itembox camera"> <img src="./image/barcelona/b8.jpg"></div>
+            <div class="itembox watch"> <img src="./image/barcelona/b20.jpg"></div>
+            <div class="itembox shoe"> <img src="./image/barcelona/b13.jpg"></div>
+            <div class="itembox headphone"> <img src="./image/barcelona/b15.jpg"></div>
+            <div class="itembox mobile"> <img src="./image/barcelona/b10.jpg"></div>
+            <div class="itembox camera"> <img src="./image/barcelona/b12.jpg"></div>
+            <div class="itembox watch"> <img src="./image/barcelona/b23.jpg"></div>
+            <div class="itembox shoe"> <img src="./image/barcelona/b15.jpg"></div>
+
+
+            <div class="itembox mobile"> <img src="./image/barcelona/b17.jpg"></div>
+            <div class="itembox camera"> <img src="./image/barcelona/b29.jpg"></div>
+            <div class="itembox watch"> <img src="./image/barcelona/b32.jpg"></div>
+            <div class="itembox shoe"> <img src="./image/barcelona/b18.jpg"></div> 
+            <div class="itembox camera"> <img src="./image/barcelona/b30.jpg"></div>
+            <div class="itembox watch"> <img src="./image/barcelona/b29.jpg"></div>
+            <div class="itembox shoe"> <img src="./image/barcelona/b27.jpg"></div>
+            <div class="itembox camera"> <img src="./image/barcelona/b28.jpg"></div>
+            <div class="itembox watch"> <img src="./image/barcelona/b20.jpg"></div>
+            <div class="itembox shoe"> <img src="./image/barcelona/b20.jpg"></div>
+        </div>
+    </section>
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('.List').click(function(){
+            const value = $(this).attr('data-filter');
+            if (value == 'All'){
+                $('.itembox').show('1000')
+            }
+            else{
+                $('.itembox').not('.'+value).hide('1000');
+                $('.itembox').filter('.'+value).show('1000');
+
+            }
+        })
+    })
+  </script>
+
+</body>
+</html>
