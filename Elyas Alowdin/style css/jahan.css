@@ -1,0 +1,47 @@
+body{
+    background-image: url(./../img/24328.jpg);
+    background-size: cover;
+    padding: 10px;
+    margin: 200px;
+}
+form{
+    width: 50%;
+    padding: 20px;
+    box-shadow: 2px 3px 10px 1px rgb(170, 170, 170);
+    border-radius: 20px;
+    margin: auto;
+    background-color: rgba(225,225,225,0.50);
+    color: white;
+    
+}
+form div{
+    display: grid;
+    grid-template-columns: 5rem auto;
+    margin-top: 20px;
+    
+}
+form div input{
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 1px rgb(0, 0, 0); 
+}
+form div:last-child input{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+form div:last-child input{
+    background-color: rgb(3, 3, 3);
+    color: rgb(253, 253, 253);
+
+}
+form div:first-child label{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 50%;
+    margin-top: -80px;
+}
