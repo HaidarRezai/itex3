@@ -1,0 +1,38 @@
+body{
+    background-color: #f3f9f9;
+    padding: 0rem;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    gap: 10px;
+}
+ main, aside,
+header, footer{
+    box-shadow: 2px 2px 10px 1px rgb(143, 142, 142);
+    padding: 2rem;
+    background-color: white;
+}
+
+main img{
+    width: 40%;
+}
+header, footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+section{
+    border-radius: 20px;
+    box-shadow: 4px 3px 10px 1px rgb(120, 119, 119);
+    padding: 20px;
+}
+
+@media screen and (max-width:800px) {
+    body{
+        grid-template-columns: 100%;
+    }
+    header, footer{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+}
