@@ -1,0 +1,124 @@
+body{
+    background-color: #f2f2f2;
+    padding: 0;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.cover-popup{
+    background-color: rgba(0,  0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+   z-index: 1000;
+}
+
+.popup{
+    width: 40%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    position: relative;
+}
+
+.header-popup{
+    background-color: rgb(245, 132, 132);
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 50%;
+}
+
+.show_popup{
+    display: flex;
+}
+
+.up{
+    width: 2rem;
+    height: 2rem;
+    overflow: hidden;
+    border-radius: 40%;
+    box-shadow: 3px 3px 10px 1px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    z-index: 100;
+}
+
+
+
+
+.cart{
+    width: 30%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 10% auto;
+    box-shadow: 10px 10px 30px 2px gray;
+    color: green;
+}
+P{
+    text-shadow: 1px 3px 5px  gray;
+}
+i{
+    font-size: 30px;
+    transition: all 250ms;
+    cursor: pointer;
+}
+
+i:hover{
+    color: greenyellow;
+    text-shadow: 4px 4px 10px black;
+}
+ul {
+    display: flex;
+    gap: 30px;
+}
+ul li {
+    list-style-type: none;
+}
+a:visited{
+    color: rgb(42, 171, 42);
+}
+a{
+    text-decoration: none;
+       padding: 10px 20px;
+}
+a:hover{
+    font-size: 2rem;
+}
+a:active{
+    color: yellow;
+}
+button{
+    border: none;
+    border-radius: 20px;
+    background-color: green;
+    padding: 10px 40px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+table tbody tr td img{
+    width: 4rem;
+    border-radius: 50%;
+}
+textarea{
+    width: 100%;
+    height: 4rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+textarea:focus{
+    outline: none;
+}

@@ -1,0 +1,54 @@
+body{
+    background-color: #eee9e9;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+nav ul{
+   
+    color: white;
+    display: flex;
+    gap: 30px;
+    background-color: rgb(57, 57, 57);
+    
+}
+nav ul li{
+    list-style: none;
+    padding: 20px 30px;
+}
+nav ul li:hover{
+    background-color: black;
+}
+
+nav ul li.active{
+    background-color: lightseagreen;
+}
+main{
+    width: 50%;
+    margin: auto;
+    border: 1px solid black;
+}
+div , span{
+    border: 1px solid black;
+    
+}
+div{
+    background-color: green;
+}
+span{
+    background-color: yellowgreen;
+    margin-top: 30px;
+    display: inline-block;
+    width: 100px;
+}
+
+.primary{
+    background-color: red;
+}
+
+}
+#one :hover{
+ background-color: aquamarine;
+}
