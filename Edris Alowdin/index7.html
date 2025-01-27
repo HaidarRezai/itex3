@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slidbar</title>
+    <link rel="stylesheet" href="./style.css/index7.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <aside>
+        <button id="toggle">
+            <i class='bx bx-menu'></i>
+        </button>
+        <div class="link">
+       <ul>
+       
+        <li class="active">
+            <i class='bx bx-home-alt-2'></i>
+            <label>Home</label>
+        </li>
+        <li>
+            <i class='bx bxl-microsoft'></i>
+            <label>Dashboord</label>
+        </li>
+        <li>
+           <i class='bx bx-message-dots'></i>
+            <label>Message</label>
+        </li>
+        <li>
+           <i class='bx bx-credit-card'></i>
+            <label>Payment</label>
+        </li>
+        <li>
+            <i class='bx bx-search'></i>
+            <label>Search</label>
+        </li>
+        <li>
+            <i class='bx bx-check-shield'></i>
+            <label>Privacy</label>
+        </li>
+       </ul>
+        </div>
+        <div class="user">
+        <ul>
+            <li>
+               <i>
+                <img src="./img/FullSizeRender.jpg" alt="">
+               </i>
+                <label>Edris Alowdin</label>
+            </li>
+            <li>
+                <i class='bx bx-cog'></i>
+                <label>Setting</label>
+            </li>
+        </ul>
+        </div>
+    </aside>
+    <script>
+        let SideBar = document.querySelector("aside");
+        let toggle = document.querySelector("#toggle");
+        
+        toggle.addEeventlistener("click", function (e){
+            if (sideBar.calsslist.contains("mini")) {
+                slidBar.calsslist.remove("mini");
+                slidBar.style.width = "16rem";           
+             } else {
+                slidBar.calsslist.add("mini");
+                slidBar.style.width = "4rem";     
+             }
+        });
+    </script>
+    <section>
+        <div class="card">
+            <i class='bx bx-paint-roll'></i>
+            <div class="title">UL Design</div>
+            <div class="detail">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea ipsa nemo id iure vero provident minus numquam, unde eligendi odio natus in labore est cumque aperiam placeat neque repudiandae commodi.
+            </div>
+
+            
+        </div>
+    </section>
+</body>
+</html>
