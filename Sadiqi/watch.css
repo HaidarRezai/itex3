@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #2f363e;
+}
+#clock
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+#secDots,
+#minDots,
+#hrDots
+{
+ position: relative;
+width: 200px;
+height: 200px;
+border-radius: 50%;
+rotate: 90deg;
+}
+#secDots::before,
+#minDots::before,
+#hrDots::before
+{
+content: '';
+position: absolute;
+inset: -20px;
+border-radius: 50%;
+box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+10px 10px 70px rgba(0, 0, 0, 0.25),
+inset 5px 5px 10px rgba(0, 0, 0, 0.25),
+inset 5px 5px 20px rgba(255, 255, 255 , 0.5),
+inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+}
+#secDots h2,
+#minDots h2,
+#hrDots h2{
+    position: absolute;
+    text-align: center;
+    transform: rotate(-90deg);
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 4em;
+    font-weight: 500;
+    color: var(--clr);
+}
+
+#secDots h2 span,
+#minDots h2 span,
+#hrDots h2 span{
+    position: absolute;
+    font-size: 0.25em;
+    font-weight: 500;
+    bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+#secDots b{
+    position: absolute;
+    color: #fff;
+    display: inline-flex;
+    transform: rotate(-90deg) translate(-30px,90px);
+}
+
+#secDots .dot,
+#minDots .dot,
+#hrDots .dot{
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    height: 3px;
+    background: var(--clr);
+    transform-origin: 100px;
+}
+#secDots .active.dot,
+#minDots .active.dot,
+#hrDots .active.dot{
+    background: var(--clr);
+    box-shadow: 0 0 10px var(--clr),
+    0 0 20px var(--clr),
+    0 0 30px var(--clr);
+}
+#secDots .active.dot ~ .dot,
+#minDots .active.dot ~ .dot,
+#hrDots .active.dot ~ .dot{
+    background: #555;
+}
+
+#secDots .dot:nth-child(5n + 5),
+#minDots .dot:nth-child(5n + 5),
+#hrDots .dot:nth-child(5n + 5){
+width: 20px;
+}
